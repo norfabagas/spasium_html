@@ -8,12 +8,14 @@
 
   <!-- CSS  -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/flexslider.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Javascript -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/jquery.flexslider-min.js"></script>
 
   <!-- custom script -->
   <script>
@@ -32,9 +34,13 @@
       } else {
         menu.css({"background-color":"transparent"});
         menu.css({"padding-top":"3%"});
-        logo.css({"width":"5em"});
+        logo.css({"width":"6.5em"});
         // menu.css({"box-shadow":"none"});
       }
+    });
+
+    $('.flexslider').flexslider({
+      animation: "slide"
     });
 
   });
@@ -49,6 +55,26 @@
     }
   });
 </script>
+
+<style>
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2324d4d4d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2324d4d4d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
 
 </head>
 <body>
@@ -87,26 +113,28 @@
   <div id="landing-section-slideshow">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
+
         <div class="carousel-item active">
           <img class="d-block img-fluid" src="assets/images/slide-1.png" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
-            <p class="bold text-left">Artwork tells your story as a compliment to a beautifully designed space</p>
+            <p class="regular text-left">Artwork tells your story as<br/>a compliment to a beautifully<br/>designed space</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <img class="d-block img-fluid" src="assets/images/slide-1.png" alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
-            <p class="bold text-left">Artwork tells your story as a compliment to a beautifully designed space</p>
+            <p class="regular text-left">Artwork tells your story as<br/>a compliment to a beautifully<br/>designed space</p>
           </div>
         </div>
 
         <div class="carousel-item">
           <img class="d-block img-fluid" src="assets/images/slide-1.png" alt="Third slide">
           <div class="carousel-caption d-none d-md-block">
-            <p class="bold text-left">Artwork tells your story as a compliment to a beautifully designed space</p>
+            <p class="regular text-left">Artwork tells your story as<br/>a compliment to a beautifully<br/>designed space</p>
           </div>
         </div>
+
       </div>
 
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

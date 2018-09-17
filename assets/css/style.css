@@ -56,6 +56,9 @@ body{
 .bold{
     font-family: 'JosefinB';
 }
+.regular {
+  font-family: 'JosefinR';s
+}
 .theme-color{
     color: #c9b8a7;
 }
