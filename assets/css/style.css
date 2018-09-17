@@ -110,6 +110,7 @@ section{
     position: relative;
 }
 .carousel-caption{
+    font-family: JosefinT;
     position: absolute;
     bottom: 42%;
     left: 53%;
